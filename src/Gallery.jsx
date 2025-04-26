@@ -33,10 +33,22 @@ const Gallery = () => {
               ) {
                 position = "prev";
               } else if (
+                index === currentIndex - 2 ||
+                (currentIndex === 0 && index === images.length - 2) ||
+                (currentIndex === 1 && index === images.length - 1)
+              ) {
+                position = "prev-prev";
+              } else if (
                 index === currentIndex + 1 ||
                 (currentIndex === images.length - 1 && index === 0)
               ) {
                 position = "next";
+              } else if (
+                index === currentIndex + 2 ||
+                (currentIndex === images.length - 2 && index === 0) ||
+                (currentIndex === images.length - 1 && index === 1)
+              ) {
+                position = "next-next";
               } else {
                 position = "hidden";
               }
