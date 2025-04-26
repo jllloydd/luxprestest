@@ -1,0 +1,55 @@
+.gallery-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    perspective: 1000px;
+    position: relative;
+    height: 500px;
+    overflow: hidden;
+}
+
+.gallery-card {
+    position: absolute;
+    width: 60%;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+    transform-style: preserve-3d;
+    opacity: 0.6;
+    z-index: 1;
+}
+
+/* Previous card animation */
+.gallery-card:first-child {
+    transform: translateX(-100%) scale(0.8) rotateY(10deg);
+    opacity: 0.4;
+    z-index: 0;
+    filter: brightness(0.8);
+}
+
+/* Next card animation */
+.gallery-card:last-child {
+    transform: translateX(100%) scale(0.8) rotateY(-10deg);
+    opacity: 0.4;
+    z-index: 0;
+    filter: brightness(0.8);
+}
+
+/* Active card animation */
+.gallery-card.active {
+    transform: translateX(0) scale(1) rotateY(0deg);
+    opacity: 1;
+    z-index: 2;
+    filter: brightness(1);
+}
+
+/* Slide out animations */
+.gallery-card.slide-left {
+    transform: translateX(-100%) scale(0.8) rotateY(10deg);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.gallery-card.slide-right {
+    transform: translateX(100%) scale(0.8) rotateY(-10deg);
+    opacity: 0;
+    transition: all 0.6s cubic-bezier(0.4, 0, 0.2, 1);
+}

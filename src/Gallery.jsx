@@ -5,6 +5,7 @@ import gal4 from './assets/gal4.jpg'
 import gal5 from './assets/gal5.jpg'
 import gal6 from './assets/gal6.jpg'
 import { useState } from 'react';
+import './Gallery.css'; // New CSS file for animations
 
 function Gallery() {
     const images = [gal1, gal2, gal3, gal4, gal5, gal6];
@@ -18,17 +19,31 @@ function Gallery() {
         setCurrentIndex((prev) => (prev === images.length - 1 ? 0 : prev + 1));
     };
 
+    // Calculate visible cards (current, previous, next)
+    const visibleCards = [
+        images[(currentIndex - 1 + images.length) % images.length],
+        images[currentIndex],
+        images[(currentIndex + 1) % images.length]
+    ];
+
     return (
         <>
             <section id="gallery" className="bg-slate-900 px-12 py-12">
                 <h1 className="text-3xl text-center dm-bold text-white mb-8">Photo Gallery</h1>
-                <div className="max-w-4xl mx-auto relative">
-                    <div className="overflow-hidden rounded-lg shadow-2xl">
-                        <img 
-                            src={images[currentIndex]} 
-                            alt={`Gallery image ${currentIndex + 1}`}
-                            className="w-full h-[500px] object-cover transition-opacity duration-300"
-                        />
+                <div className="max-w-6xl mx-auto relative">
+                    <div className="gallery-container">
+                        {visibleCards.map((img, index) => (
+                            <div 
+                                key={index}
+                                className={`gallery-card ${index === 1 ? 'active' : ''}`}
+                            >
+                                <img 
+                                    src={img} 
+                                    alt={`Gallery image`}
+                                    className="w-full h-[400px] object-cover rounded-lg shadow-2xl"
+                                />
+                            </div>
+                        ))}
                     </div>
                     
                     {/* Navigation Buttons */}
