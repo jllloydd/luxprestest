@@ -1,13 +1,14 @@
-import mmlogo from '../public/mmlogo.png'
+import mmlogo from '/mmlogo.png'
 
 function Header() {
 
   return (
     <>
       <header class="flex shadow-md py-4 px-4 sm:px-10 bg-white min-h-[70px] tracking-wide relative z-50">
-      <div class="flex flex-wrap items-center justify-between gap-5 w-full">
+      <div class="flex flex-wrap items-center justify-center gap-5 w-full">
         <a href="javascript:void(0)" class="max-sm:hidden"><img src={mmlogo} alt="logo" class="w-36" /></a>
         <a href="javascript:void(0)" class="hidden max-sm:block"><img src={mmlogo} alt="logo" class="w-9" /></a>
+        
 
         <div id="collapseMenu"
           class="max-lg:hidden lg:!block max-lg:before:fixed max-lg:before:bg-black max-lg:before:opacity-50 max-lg:before:inset-0 max-lg:before:z-50">
@@ -23,7 +24,7 @@ function Header() {
           </button>
 
           <ul
-            class="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-0 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
+            class="lg:flex gap-x-5 max-lg:space-y-3 max-lg:fixed max-lg:bg-white max-lg:w-1/2 max-lg:min-w-[300px] max-lg:top-0 max-lg:left-1/2 max-lg:transform max-lg:-translate-x-1/2 max-lg:p-6 max-lg:h-full max-lg:shadow-md max-lg:overflow-auto z-50">
             <li class="mb-6 hidden max-lg:block">
               <a href="javascript:void(0)"><img src="https://readymadeui.com/readymadeui.svg" alt="logo" class="w-36" />
               </a>
