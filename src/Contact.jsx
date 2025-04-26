@@ -1,5 +1,5 @@
 import { useEffect, useState } from 'react';
-import whatsapp from '/whatsapp.png'
+import whatsapp from './assets/whatsapp.png'
 
 function Contact(){
     const [isVisible, setIsVisible] = useState(false);

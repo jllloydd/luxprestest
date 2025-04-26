@@ -1,7 +1,7 @@
-import facebook from '/facebook.png'
-import instagram from '/instagram.png'
-import linkedin from '/linkedin.png'
-import yelp from '/yelp.png'
+import facebook from './assets/facebook.png'
+import instagram from './assets/instagram.png'
+import linkedin from './assets/linkedin.png'
+import yelp from './assets/yelp.png'
 import { useState, useEffect } from 'react';
 
 function Socials() {

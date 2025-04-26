@@ -1,4 +1,4 @@
-import mmlogo from '/mmlogo.png'
+import mmlogo from './assets/mmlogo.png'
 
 function Header() {
 

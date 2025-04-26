@@ -1,4 +1,4 @@
-import searchimg from '/searchimg.jpg'
+import searchimg from './assets/searchimg.jpg'
 
 function SearchSection(){
     return(

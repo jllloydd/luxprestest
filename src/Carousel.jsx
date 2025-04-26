@@ -1,7 +1,7 @@
-import pc from '/pc.png'
-import realtor from '/realtor.jpg'
-import ridge from '/ridge.png'
-import eqh from '/eqh.png'
+import pc from './assets/pc.png'
+import realtor from './assets/realtor.jpg'
+import ridge from './assets/ridge.png'
+import eqh from './assets/eqh.png'
 
 function Carousel(){
     return(

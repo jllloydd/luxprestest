@@ -1,6 +1,6 @@
-import services1 from '/services1.jpg'
-import services2 from '/services2.jpg'
-import services3 from '/services3.jpg'
+import services1 from './assets/services1.jpg'
+import services2 from './assets/services2.jpg'
+import services3 from './assets/services3.jpg'
 
 function Services(){
     return(

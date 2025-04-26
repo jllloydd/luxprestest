@@ -1,9 +1,9 @@
-import gal1 from '/gal1.jpg'
-import gal2 from '/gal2.jpg'
-import gal3 from '/gal3.jpg'
-import gal4 from '/gal4.jpg'
-import gal5 from '/gal5.jpg'
-import gal6 from '/gal6.jpg'
+import gal1 from './assets/gal1.jpg'
+import gal2 from './assets/gal2.jpg'
+import gal3 from './assets/gal3.jpg'
+import gal4 from './assets/gal4.jpg'
+import gal5 from './assets/gal5.jpg'
+import gal6 from './assets/gal6.jpg'
 import { useState } from 'react';
 
 function Gallery() {

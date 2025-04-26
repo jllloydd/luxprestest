@@ -1,6 +1,6 @@
-import cta1 from "/cta1.png";
-import cta2 from "/cta2.png";
-import cta3 from "/cta3.png";
+import cta1 from "./assets/cta1.png";
+import cta2 from "./assets/cta2.png";
+import cta3 from "./assets/cta3.png";
 
 function CTASection() {
   return (

@@ -1,4 +1,4 @@
-import marci from '/marci.png'
+import marci from './assets/marci.png'
 function RealtorSection(){
 return (
     <>
